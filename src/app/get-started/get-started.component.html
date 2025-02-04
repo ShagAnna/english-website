@@ -1,0 +1,27 @@
+<div class="test-container">
+    <h1>Test Your English Knowledge</h1>
+    <form (ngSubmit)="submitTest()">
+      <div *ngFor="let question of questions; let i = index">
+        <p>{{ i + 1 }}. {{ question.question }}</p>
+        <div class="options" *ngFor="let option of question.options">
+          <label>
+            <input
+              type="radio"
+              name="question{{ i }}"
+              [value]="option"
+              [(ngModel)]="userAnswers[i]"
+              required
+            />
+            {{ option }}
+          </label>
+        </div>
+      </div>
+      <button type="submit" [disabled]="!isAllAnswered()">Submit</button>
+    </form>
+
+    <div *ngIf="results !== null" class="results">
+      <h2>Your Results</h2>
+      <p>You got {{ results }} out of {{ questions.length }} correct!</p>
+    </div>
+  </div>
+
