@@ -14,6 +14,7 @@ import { BeginnerComponent } from './beginner/beginner.component';
 import { PreIntermediateComponent } from './pre-intermediate/pre-intermediate.component';
 import { IntermediateComponent } from './intermediate/intermediate.component';
 import { ContactComponent } from './contact/contact.component';
+import { Lesson1Component } from './beginner/lesson1/lesson1.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ContactComponent } from './contact/contact.component';
     BeginnerComponent,
     PreIntermediateComponent,
     IntermediateComponent,
-    ContactComponent
+    ContactComponent,
+    Lesson1Component
   ],
   imports: [
     BrowserModule,
