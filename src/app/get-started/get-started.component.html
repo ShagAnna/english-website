@@ -1,7 +1,7 @@
-<div class="test-container">
+<div class="card-container">
     <h1>Test Your English Knowledge</h1>
-    <form (ngSubmit)="submitTest()">
-      <div *ngFor="let question of questions; let i = index">
+    <form class="cards-view" (ngSubmit)="submitTest()">
+      <div class="card" *ngFor="let question of questions; let i = index">
         <p>{{ i + 1 }}. {{ question.question }}</p>
         <div class="options" *ngFor="let option of question.options">
           <label>

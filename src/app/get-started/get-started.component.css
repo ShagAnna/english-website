@@ -1,27 +1,4 @@
-.test-container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
 
-  h1 {
-    text-align: center;
-    color: #4CAF50;
-  }
-
-  h2 {
-    text-align: center;
-    color: #333;
-  }
-
-  p {
-    font-size: 14px;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
 
   label {
     font-weight: 400;
@@ -33,23 +10,28 @@
     margin-left: 14px;
   }
 
+  
   button {
-    display: block;
-    margin: 20px auto;
     padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 16px;
     cursor: pointer;
+    width: 200px; 
+    margin-top: 20px; /* Adds some space between the last cardn */
   }
-
+  
   button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
   }
-
+  
+  button:hover {
+    background-color: #45a049; /* Optional: Adds hover effect for better user interaction */
+  }
+  
   .results {
     margin-top: 20px;
     text-align: center;
