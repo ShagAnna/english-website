@@ -15,6 +15,10 @@ import { PreIntermediateComponent } from './pre-intermediate/pre-intermediate.co
 import { IntermediateComponent } from './intermediate/intermediate.component';
 import { ContactComponent } from './contact/contact.component';
 import { Lesson1Component } from './beginner/lesson1/lesson1.component';
+import { Lesson2Component } from './beginner/lesson2/lesson2.component';
+import { Lesson3Component } from './beginner/lesson3/lesson3.component';
+import { Lesson4Component } from './beginner/lesson4/lesson4.component';
+import { Lesson5Component } from './beginner/lesson5/lesson5.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,11 @@ import { Lesson1Component } from './beginner/lesson1/lesson1.component';
     PreIntermediateComponent,
     IntermediateComponent,
     ContactComponent,
-    Lesson1Component
+    Lesson1Component,
+    Lesson2Component,
+    Lesson3Component,
+    Lesson4Component,
+    Lesson5Component
   ],
   imports: [
     BrowserModule,

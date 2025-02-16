@@ -8,6 +8,10 @@ import { PreIntermediateComponent } from './pre-intermediate/pre-intermediate.co
 import { IntermediateComponent } from './intermediate/intermediate.component';
 import { ContactComponent } from './contact/contact.component';
 import { Lesson1Component } from './beginner/lesson1/lesson1.component';
+import { Lesson2Component } from './beginner/lesson2/lesson2.component';
+import { Lesson3Component } from './beginner/lesson3/lesson3.component';
+import { Lesson4Component } from './beginner/lesson4/lesson4.component';
+import { Lesson5Component } from './beginner/lesson5/lesson5.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -19,6 +23,10 @@ const routes: Routes = [
   { path: 'intermediate', component: IntermediateComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'lesson1', component: Lesson1Component },
+  { path: 'lesson2', component: Lesson2Component },
+  { path: 'lesson3', component: Lesson3Component },
+  { path: 'lesson4', component: Lesson4Component },
+  { path: 'lesson5', component: Lesson5Component },
 
 
 //   { path: 'about', loadComponent: () => import('./about/about.component').then(m => m.AboutComponent) },
