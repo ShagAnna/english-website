@@ -19,6 +19,7 @@ import { Lesson2Component } from './beginner/lesson2/lesson2.component';
 import { Lesson3Component } from './beginner/lesson3/lesson3.component';
 import { Lesson4Component } from './beginner/lesson4/lesson4.component';
 import { Lesson5Component } from './beginner/lesson5/lesson5.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { Lesson5Component } from './beginner/lesson5/lesson5.component';
     Lesson2Component,
     Lesson3Component,
     Lesson4Component,
-    Lesson5Component
+    Lesson5Component,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,
