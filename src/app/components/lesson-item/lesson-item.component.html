@@ -1,0 +1,30 @@
+<div class="lesson-content">
+    <h2>{{ title }}</h2>
+    <p>{{ description }}</p>
+  
+    <h3>Common Vocabulary for Daily Activities:</h3>
+    <ul>
+      <li *ngFor="let item of vocabulary">
+        {{ item.emoji }} <strong>{{ item.term }}</strong> - {{ item.definition }}
+      </li>
+    </ul>
+  
+    <h3>Example Sentences:</h3>
+    <ul>
+      <li *ngFor="let example of examples">{{ example }}</li>
+    </ul>
+  
+    <h3>Useful Questions & Answers:</h3>
+    <ul>
+      <li *ngFor="let q of questions">
+        <strong>{{ q.question }}</strong> – "{{ q.answer }}"
+      </li>
+    </ul>
+  
+    <h3>Practice Task:</h3>
+    <p>Try to write your own daily routine! Use the vocabulary and example sentences from this lesson.</p>
+  
+    <button (click)="goBack()">Back</button>
+    <button (click)="markLessonComplete()" [disabled]="isCompleted">Complete</button>
+  </div>
+  

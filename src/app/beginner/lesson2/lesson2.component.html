@@ -1,46 +1,8 @@
-<div class="lesson-content">
-    <h2>Lesson 2: Food and Drinks</h2>
-    <p>In this lesson, we will learn common vocabulary and sentences to talk about food and drinks in English.</p>
-  
-    <h3>Common Vocabulary for Food and Drinks:</h3>
-    <ul>
-        <li>🍞 <strong>Bread</strong> - a basic food made from flour and baked</li>
-        <li>🍚 <strong>Rice</strong> - small white or brown grains that are cooked and eaten</li>
-        <li>🍕 <strong>Pizza</strong> - a popular dish with dough, cheese, and toppings</li>
-        <li>🍔 <strong>Burger</strong> - a sandwich with a cooked meat patty inside</li>
-        <li>🥗 <strong>Salad</strong> - a dish made of fresh vegetables</li>
-        <li>🍎 <strong>Apple</strong> - a red or green fruit that is sweet and crunchy</li>
-        <li>🥛 <strong>Milk</strong> - a white liquid from cows, used in drinks and cooking</li>
-        <li>🍵 <strong>Tea</strong> - a hot drink made by boiling tea leaves in water</li>
-        <li>☕ <strong>Coffee</strong> - a popular hot drink made from coffee beans</li>
-        <li>🥤 <strong>Juice</strong> - a drink made from squeezed fruits</li>
-    </ul>
-  
-    <h3>Example Sentences:</h3>
-    <ul>
-        <li>"I eat bread and eggs for breakfast."</li>
-        <li>"My favorite food is pizza because it’s so tasty!"</li>
-        <li>"For lunch, I usually have rice with vegetables."</li>
-        <li>"I love drinking coffee in the morning."</li>
-        <li>"I drink a glass of milk before going to bed."</li>
-        <li>"Salads are healthy and full of vitamins."</li>
-        <li>"Do you like apple juice or orange juice?"</li>
-        <li>"We had a burger and fries for dinner last night."</li>
-    </ul>
-  
-    <h3>Useful Questions & Answers:</h3>
-    <ul>
-        <li><strong>What’s your favorite food?</strong> – "My favorite food is pasta!"</li>
-        <li><strong>What do you usually eat for breakfast?</strong> – "I usually eat toast and drink tea."</li>
-        <li><strong>Do you like spicy food?</strong> – "Yes, I love spicy food!"</li>
-        <li><strong>What’s a popular dish in your country?</strong> – "A popular dish in my country is curry."</li>
-        <li><strong>Do you prefer coffee or tea?</strong> – "I prefer coffee because it wakes me up!"</li>
-    </ul>
-  
-    <h3>Practice Task:</h3>
-    <p>Try to write a short paragraph about your favorite food and drink! Use the vocabulary and example sentences from this lesson.</p>
-  
-    <button (click)="goBack()">Back</button>
-    <button (click)="markLessonComplete()" [disabled]="isCompleted">Complete</button>
-  </div>
-  
+<app-lesson-item
+  title="Lesson 2: Food and Drinks"
+  description="In this lesson, we will learn common vocabulary and sentences to talk about food and drinks in English."
+  [vocabulary]="foodAndDrinksVocabulary"
+  [examples]="foodAndDrinksExamples"
+  [questions]="foodAndDrinksQuestions"
+  lessonKey="lesson2-food-and-drinks"
+></app-lesson-item>

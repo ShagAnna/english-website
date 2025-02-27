@@ -1,36 +1,22 @@
-<!-- beginner.component.html -->
+
 <div class="card-container">
     <h1>Welcome to Beginner English Lessons</h1>
   
-    <!-- Cards for Lessons -->
     <div class="lesson-cards">
-      <div class="card" (click)="openLesson('lesson1')">
-        <a routerLink="/lesson1" routerLinkActive="active">
-        <h3>Lesson 1: Daily Routine</h3>
-    </a>
+      <div class="card" *ngFor="let lesson of lessons" (click)="openLesson(lesson.id)">
+          <a [routerLink]="lesson.link" routerLinkActive="active">
+              <h3>{{ lesson.title }}</h3>
+          </a>
       </div>
-      <div class="card" (click)="openLesson('lesson2')">
-        <a routerLink="/lesson2" routerLinkActive="active"></a>
-        <h3>Lesson 2: Food and Drink</h3>
-      </div>
-      <div class="card" (click)="openLesson('lesson3')">
-        <a routerLink="/lesson3" routerLinkActive="active"></a>
-        <h3>Lesson 3: Family</h3>
-      </div>
-    </div>
-  
-    <!-- Display the Selected Lesson -->
-    <div *ngIf="selectedLesson === 'lesson1'">
-      <app-lesson1></app-lesson1>
-    </div>
-    <div *ngIf="selectedLesson === 'lesson2'">
-      <app-lesson2></app-lesson2>
-    </div>
-    <div *ngIf="selectedLesson === 'lesson3'">
-      <app-lesson3></app-lesson3>
-    </div>
   </div>
-  <!-- app.component.html -->
-<router-outlet></router-outlet>
+  
+    <ng-container *ngFor="let lesson of lessons">
+      <div *ngIf="selectedLesson === lesson.id">
+          <ng-container *ngComponentOutlet="lesson.component"></ng-container>
+      </div>
+    </ng-container>
+</div>
+ 
+
 
   

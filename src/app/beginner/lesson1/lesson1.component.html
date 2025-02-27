@@ -1,47 +1,8 @@
-<div class="lesson-content">
-  <h2>Lesson 1: Daily Routine</h2>
-  <p>In this lesson, we will learn how to talk about your daily routine in English.</p>
-
-  <h3>Common Vocabulary for Daily Activities:</h3>
-<ul>
-    <li>🛏️ <strong>Wake up</strong> - to stop sleeping and get out of bed</li>
-    <li>🚿 <strong>Take a shower</strong> - to wash your body under running water</li>
-    <li>🥞 <strong>Have breakfast</strong> - to eat the first meal of the day</li>
-    <li>🏢 <strong>Go to work</strong> - to leave home for work</li>
-    <li>🎒 <strong>Go to school</strong> - to leave home for school</li>
-    <li>🍽️ <strong>Have lunch</strong> - to eat a meal in the middle of the day</li>
-    <li>🏠 <strong>Go home</strong> - to return to your house</li>
-    <li>📺 <strong>Watch TV</strong> - to watch shows or movies on television</li>
-    <li>📖 <strong>Read a book</strong> - to read for fun or learning</li>
-    <li>🛌 <strong>Go to bed</strong> - to get into bed and sleep</li>
-</ul>
-
-
-  <h3>Example Sentences:</h3>
-  <ul>
-      <li>"I wake up at 6:30 AM every day."</li>
-      <li>"I take a shower before I have breakfast."</li>
-      <li>"I go to work at 8:00 AM and start at 9:00 AM."</li>
-      <li>"At lunchtime, I usually eat a sandwich and drink coffee."</li>
-      <li>"I finish work at 5:00 PM and go home."</li>
-      <li>"In the evening, I cook dinner and watch TV."</li>
-      <li>"Before going to bed, I like to read a book."</li>
-      <li>"I go to sleep at 11:00 PM."</li>
-  </ul>
-
-  
-  <h3>Useful Questions & Answers:</h3>
-  <ul>
-      <li><strong>What time do you wake up?</strong> – "I wake up at 7:00 AM."</li>
-      <li><strong>What do you do after you wake up?</strong> – "I brush my teeth and take a shower."</li>
-      <li><strong>What time do you go to work/school?</strong> – "I go to work at 8:30 AM."</li>
-      <li><strong>What do you do in the evening?</strong> – "In the evening, I relax, watch TV, and read a book."</li>
-      <li><strong>What time do you go to bed?</strong> – "I usually go to bed at 10:30 PM."</li>
-  </ul>
-
-  <h3>Practice Task:</h3>
-  <p>Try to write your own daily routine! Use the vocabulary and example sentences from this lesson.</p>
-
-  <button (click)="goBack()">Back</button>
-  <button (click)="markLessonComplete()" [disabled]="isCompleted">Complete</button>
-</div>
+<app-lesson-item
+  title="Lesson 1: Daily Routine"
+  description="In this lesson, we will learn how to talk about your daily routine in English."
+  [vocabulary]="dailyRoutineVocabulary"
+  [examples]="dailyRoutineExamples"
+  [questions]="dailyRoutineQuestions"
+  lessonKey="lesson1-daily-routine"
+></app-lesson-item>

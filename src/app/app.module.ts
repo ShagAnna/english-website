@@ -20,6 +20,8 @@ import { Lesson3Component } from './beginner/lesson3/lesson3.component';
 import { Lesson4Component } from './beginner/lesson4/lesson4.component';
 import { Lesson5Component } from './beginner/lesson5/lesson5.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { LessonItemComponent } from './components/lesson-item/lesson-item.component';
+import { Lesson6Component } from './beginner/lesson6/lesson6.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
     Lesson3Component,
     Lesson4Component,
     Lesson5Component,
-    ProgressBarComponent
+    ProgressBarComponent,
+    LessonItemComponent,
+    Lesson6Component
   ],
   imports: [
     BrowserModule,
